@@ -315,10 +315,14 @@ public class OtpEditText extends AppCompatEditText implements TextWatcher {
             mLinesPaint.setColor(mSecondaryColor);
         } else {
             mStrokePaint.setColor(mSecondaryColor);
-            mLinesPaint.setColor(ContextCompat.getColor(getContext(), android.R.color.white));
+/*
+            mLinesPaint.setColor(ContextCompat.getColor(getContext(), android.R.color.black));
+*/
         }
         if (current) {
-            mLinesPaint.setColor(ContextCompat.getColor(getContext(), android.R.color.white));
+/*
+            mLinesPaint.setColor(ContextCompat.getColor(getContext(), android.R.color.black));
+*/
             mStrokePaint.setColor(mPrimaryColor);
         }
     }
