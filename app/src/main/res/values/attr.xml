@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NumericKeyboard">
+        <attr name="field" format="reference" />
+        <attr name="fieldMaxLength" format="integer" />
+
+        <attr name="keyHeight" format="dimension" />
+        <attr name="keyTextSize" format="dimension" />
+        <attr name="keyTextColor" format="color" />
+
+        <attr name="keySpecial" format="string" />
+    </declare-styleable>
+    <declare-styleable name="OtpEditText">
+        <attr name="oev_length" format="integer|reference"/>
+        <attr name="oev_primary_color" format="color|reference" />
+        <attr name="oev_secondary_color" format="color|reference" />
+        <attr name="oev_text_color" format="color|reference" />
+
+        <attr name="oev_box_style" format="string|reference" />
+
+        <attr name="oev_mask_input" format="boolean" />
+        <attr name="oev_mask_character" format="string|reference" />
+
+    </declare-styleable>
+</resources>

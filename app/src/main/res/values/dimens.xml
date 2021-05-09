@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="heading">@dimen/_25ssp</dimen>
+    <dimen name="subHeading">@dimen/_22ssp</dimen>
+    <dimen name="title">@dimen/_18ssp</dimen>
+    <dimen name="subtitle">@dimen/_16ssp</dimen>
+    <!--MARGIN VALUES-->
+    <!--START HERE-->
+    <dimen name="minMargin">@dimen/_4sdp</dimen>
+    <dimen name="smallMargin">@dimen/_8sdp</dimen>
+    <dimen name="medLMargin">@dimen/_12sdp</dimen>
+    <dimen name="margin">@dimen/_16sdp</dimen>
+
+    <dimen name="medHMargin">@dimen/_20sdp</dimen>
+
+    <dimen name="bigMargin">@dimen/_24sdp</dimen>
+
+    <dimen name="maxMargin">@dimen/_28sdp</dimen>
+
+    <!--END HERE-->
+    <!--MARGIN VALUES-->
+
+    <!--PADDING VALUES-->
+    <!--START HERE-->
+    <dimen name="padding">@dimen/_16sdp</dimen>
+
+    <dimen name="medLPadding">@dimen/_12sdp</dimen>
+    <dimen name="medHPadding">@dimen/_20sdp</dimen>
+
+    <dimen name="smallPadding">@dimen/_8sdp</dimen>
+    <dimen name="bigPadding">@dimen/_24sdp</dimen>
+
+    <dimen name="minPadding">@dimen/_4sdp</dimen>
+    <dimen name="maxPadding">@dimen/_28sdp</dimen>
+
+    <!--END HERE-->
+    <!--PADDING VALUES-->
+    <dimen name="keyboard_row_height">48dp</dimen>
+    <dimen name="keyboard_text_size">30sp</dimen>
+</resources>

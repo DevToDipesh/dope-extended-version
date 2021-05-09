@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_activity_navigation"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/phoneVerifyFragment"
+        android:name="com.example.chatapp.userAction.phoneVerify.PhoneVerifyFragment"
+        android:label="fragment_phone_verify"
+        tools:layout="@layout/fragment_phone_verify" >
+        <action
+            android:id="@+id/action_phoneVerifyFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+        <action
+            android:id="@+id/action_phoneVerifyFragment_to_otpVerifyFragment"
+            app:destination="@id/otpVerifyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otpVerifyFragment"
+        tools:layout="@layout/fragment_otp_verify"
+        android:name="com.example.chatapp.userAction.phoneVerify.OtpVerifyFragment"
+        android:label="OtpVerifyFragment" >
+        <action
+            android:id="@+id/action_otpVerifyFragment_to_phoneVerifyFragment"
+            app:destination="@id/phoneVerifyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        tools:layout="@layout/fragment_welcome"
+        android:name="com.example.chatapp.userAction.welcome.WelcomeFragment"
+        android:label="WelcomeFragment" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_phoneVerifyFragment"
+            app:destination="@id/phoneVerifyFragment" />
+    </fragment>
+</navigation>

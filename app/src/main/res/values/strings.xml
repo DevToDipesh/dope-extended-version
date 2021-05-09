@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Dope</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dont_have_account">Dont have Account? <b>Signup</b></string>
+    <string name="phone_verification">Phone Verification</string>
+    <string name="phone">Phone</string>
+    <string name="send_otp">Send OTp</string>
+    <string name="verify_phone">Verify Phone</string>
+    <string name="verify_and_continue">Verify and Continue</string>
+    <string name="you_ll_receive_a_4_digit_code_n_to_verify_next">You\'ll receive a 4-digit code\n to verify next.</string>
+    <string name="get_started">Get Started</string>
+    <string name="dope_team_welcomes_you">Dope Team Welcomes you!!</string>
+    <string name="termsprivacy"><a href='https://socreates.com/terms-of-use'>Terms of use</a> and <a href='https://socreates.com/privacy-policy'>Privacy policy.</a></string>
+    <string name="agreeing">By going further, you are agreeing to Dope\'s  <a href='https://socreates.com/terms-of-use'>Terms of use</a> and <a href='https://socreates.com/privacy-policy'>Privacy policy.</a></string>
+</resources>

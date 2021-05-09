@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/light_black"
+            tools:context=".userAction.login.LoginFragment">
+
+            <RelativeLayout
+                android:id="@+id/rlTop"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/ivClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/smallPadding"
+                    android:src="@drawable/ic_baseline_keyboard_backspace_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/verify_phone"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title" />
+            </RelativeLayout>
+
+   
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+
+                android:text="Code is sent to 85566 45544"
+                android:textColor="@color/white"
+                android:textSize="@dimen/subtitle"
+                app:layout_constraintBottom_toTopOf="@+id/otp_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/rlTop" />
+            <com.example.chatapp.customViews.otpView.OtpEditText
+                android:id="@+id/otp_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/tvLogin"
+                android:digits="0123456789"
+                android:padding="32dp"
+                android:cursorVisible="false"
+                android:textSize="30sp"
+                app:oev_box_style="rounded_underline"
+                app:oev_mask_input="false"
+                app:oev_primary_color="#CCFF00"
+                app:oev_secondary_color="#DADADA"
+                app:oev_text_color="@color/white"
+                android:maxLength="4"
+                />
+            <TextView
+                android:id="@+id/tvLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_25sdp"
+                android:fontFamily="@font/medium"
+                android:text="@string/you_ll_receive_a_4_digit_code_n_to_verify_next"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/subtitle"
+                app:layout_constraintBottom_toTopOf="@+id/btContinue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/otp_view" />
+
+            <com.google.android.material.button.MaterialButton
+android:id="@+id/btContinue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:insetTop="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/keyboard"
+                app:layout_constraintTop_toBottomOf="@+id/tvLogin"
+                android:insetBottom="0dp"
+                android:fontFamily="@font/medium"
+                android:layout_margin="@dimen/smallMargin"
+                app:cornerRadius="@dimen/_15sdp"
+                app:backgroundTint="@color/purple_700"
+                android:text="@string/verify_and_continue" />
+
+            <com.example.chatapp.customViews.numericKeyboard.NumericKeyboard
+                android:id="@+id/keyboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                app:layout_constraintTop_toBottomOf="@+id/btContinue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:field="@+id/otp_view"
+                app:fieldMaxLength="10"
+                app:keyTextColor="@android:color/white" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>

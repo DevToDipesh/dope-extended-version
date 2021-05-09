@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="flow_images_max_elements">2</integer>
+    <integer name="flow_text_blocks_max_elements">1</integer>
+</resources>

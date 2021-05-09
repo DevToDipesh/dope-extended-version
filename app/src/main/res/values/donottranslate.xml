@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mask_character">\u2022</string>
+
+    <string name="facebook_app_id">228905318460007</string>
+    <string name="fb_login_protocol_scheme">fb228905318460007</string>
+    <string name="terms_url">https://socreates.com/terms-of-use</string>
+    <string name="privacy_url">https://socreates.com/privacy-policy</string>
+    <string name="socreates_facebook_url">https://www.facebook.com/groups/socreaterswithin</string>
+    <string name="know_more">https://socreates.com/about-socreates-1</string>
+    <string name="website">https://socreates.com</string>
+    <string name="help_center">https://socreates.com/help-center</string>
+    <string name="socreates_glossary">https://socreates.com/socreates-glossary</string>
+    <string name="end_of_journey_video">https://vimeo.com/433198281/e7aa25fd98</string>
+    <string name="app_tutorial">https://vimeo.com/504518585/24eba70311</string>
+    <string name="style_underline">underline</string>
+</resources>
